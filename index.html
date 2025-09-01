@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creciendo con Salud</title>
+  <style>
+    :root{
+      --rosa-fondo:#fff7fa;
+      --rosa-clarito:#fde2e4;
+      --rosa:#f8c8dc;
+      --rosa-osc:#b03060;
+      --texto:#333;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: Arial, Helvetica, sans-serif;
+      background:var(--rosa-fondo); color:var(--texto);
+    }
+    header{ text-align:center; padding:24px 16px; background:var(--rosa);}
+    header img{ width:120px; height:120px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 10px;}
+    header h1{ margin:6px 0 2px; color:var(--rosa-osc);}
+    header p{ margin:0; opacity:.85}
+
+    nav{display:flex; gap:16px; justify-content:center; flex-wrap:wrap; padding:10px 0; background:var(--rosa-clarito);}
+    nav a{ color:var(--rosa-osc); text-decoration:none; font-weight:700}
+
+    main{max-width:980px; margin:0 auto; padding:24px 16px;}
+    section{margin:28px 0;}
+    h2{color:var(--rosa-osc); margin:0 0 12px}
+
+    /* Recetas minimal */
+    details{margin:12px 0; background:#fff; border:1px solid #e9d5dd; border-radius:12px; overflow:hidden}
+    summary{
+      list-style:none; cursor:pointer; padding:14px 16px; font-weight:700; color:#5a2d3c;
+      background:var(--rosa-clarito);
+    }
+    summary::-webkit-details-marker{display:none}
+    .receta{ padding:16px }
+    .receta img{ width:100%; max-height:320px; object-fit:cover; border-radius:12px; margin:8px 0 14px}
+    .cols{display:grid; grid-template-columns:1fr; gap:12px}
+    @media(min-width:760px){ .cols{grid-template-columns:1fr 1fr} }
+    ul,ol{margin:8px 0 0 18px}
+    .nota{background:#fff0f5; border-left:4px solid var(--rosa-osc); padding:10px 12px; border-radius:8px; margin-top:10px}
+
+    table{width:100%; border-collapse:collapse; margin-top:12px; background:#fff}
+    th,td{border:1px solid #e7d7de; padding:10px; text-align:center}
+    th{background:var(--rosa); color:#4a2a36}
+
+    footer{ text-align:center; padding:22px 12px; background:var(--rosa); margin-top:24px}
+    footer a{ color:var(--rosa-osc); font-weight:700; text-decoration:none}
+  </style>
+</head>
+<body>
+  <header id="inicio">
+    <img src="logo.png" alt="Logo Creciendo con Salud" />
+    <h1>Creciendo con Salud</h1>
+    <p>Concientizamos y enseñamos a comer más saludable con recetas fáciles y deliciosas.</p>
+  </header>
+
+  <nav>
+    <a href="#importancia">Importancia</a>
+    <a href="#dirigido">Dirigido a</a>
+    <a href="#recetas">Recetas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="importancia">
+      <h2>¿Por qué es importante?</h2>
+      <ul>
+        <li>Previene sobrepeso, diabetes y problemas cardiovasculares.</li>
+        <li>Mejora la concentración y el rendimiento académico.</li>
+        <li>Aporta energía estable (menos picos de azúcar).</li>
+        <li>Favorece un crecimiento y desarrollo adecuados.</li>
+        <li>Aumenta la fibra, vitaminas y minerales en la dieta.</li>
+        <li>Forma hábitos saludables que duran toda la vida.</li>
+      </ul>
+    </section>
+
+    <section id="dirigido">
+      <h2>¿A quién está dirigido?</h2>
+      <p>Este proyecto está dirigido a los estudiantes del <strong>Colegio Parroquial Nuestra Señora Buen Consejo</strong>, sus familias y la comunidad educativa.</p>
+    </section>
+
+    <section id="recetas">
+      <h2>Recetas</h2>
+
+      <!-- BROWNIE DE AVENA -->
+      <details open>
+        <summary>🍫 Brownie de avena</summary>
+        <div class="receta">
+          <img src="brownie.png" alt="Brownie de avena" />
+          <div class="cols">
+            <div>
+              <h3>Ingredientes</h3>
+              <ul>
+                <li>1 taza de puré de plátano maduro (o 2 plátanos grandes)</li>
+                <li>½ taza de cacao en polvo sin azúcar</li>
+                <li>½ taza de mantequilla de maní (o de almendras)</li>
+                <li>¼ taza de miel, panela o dátiles triturados</li>
+                <li>2 huevos (o 2 “huevos” de linaza para versión vegana)</li>
+                <li>1 cdta de esencia de vainilla</li>
+                <li>½ cdta de polvo de hornear</li>
+                <li>Opcional: nueces o chips de chocolate 70%</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Preparación</h3>
+              <ol>
+                <li>Precalienta el horno a 180 °C y engrasa un molde cuadrado.</li>
+                <li>Tritura bien los plátanos hasta hacer puré.</li>
+                <li>Añade huevos, mantequilla de maní, miel y vainilla. Mezcla.</li>
+                <li>Incorpora el cacao y el polvo de hornear hasta homogeneizar.</li>
+                <li>Agrega nueces o chips si lo deseas.</li>
+                <li>Vierte en el molde y hornea 20–25 min.</li>
+                <li>Deja enfriar antes de cortar en cuadritos.</li>
+              </ol>
+              <p class="nota">✨ Truco: para textura “fudge”, retira del horno un poquito antes.</p>
+            </div>
+          </div>
+
+          <h3>Comparación Brownie Tradicional vs. Brownie Saludable</h3>
+          <table>
+            <tr><th>Característica</th><th>Brownie Tradicional</th><th>Brownie Saludable</th></tr>
+            <tr><td>Harina</td><td>Harina refinada de trigo</td><td>Avena o sin harina (plátano)</td></tr>
+            <tr><td>Azúcar</td><td>Azúcar blanca (1–2 tazas)</td><td>Miel, panela, dátiles o plátano</td></tr>
+            <tr><td>Grasas</td><td>Mantequilla (saturadas)</td><td>Mantequilla de maní/almendras</td></tr>
+            <tr><td>Calorías (50 g)</td><td>250–300 kcal</td><td>120–160 kcal</td></tr>
+            <tr><td>Fibra</td><td>Muy poca</td><td>Alta</td></tr>
+            <tr><td>Índice glucémico</td><td>Alto</td><td>Medio-bajo</td></tr>
+            <tr><td>Beneficios</td><td>Energía rápida y sabor</td><td>Energía + fibra + antioxidantes</td></tr>
+            <tr><td>Sabor</td><td>Dulce e intenso, más pesado</td><td>Chocolatoso, más ligero y húmedo</td></tr>
+          </table>
+          <p class="nota"><strong>Conclusión:</strong> Reduce casi a la mitad las calorías, evita picos de azúcar y aporta fibra, potasio y grasas buenas. ¡Sigue siendo delicioso!</p>
+        </div>
+      </details>
+
+      <!-- TORTA DE BANANO -->
+      <details>
+        <summary>🍌 Torta de banano</summary>
+        <div class="receta">
+          <img src="banano.png" alt="Torta de banano" />
+          <div class="cols">
+            <div>
+              <h3>Ingredientes</h3>
+              <ul>
+                <li>3 bananos maduros (bien negritos)</li>
+                <li>2 huevos</li>
+                <li>½ taza de aceite vegetal (o mantequilla derretida)</li>
+                <li>1 taza de azúcar (puede ser panela o morena)</li>
+                <li>2 tazas de harina de trigo (puede ser mitad integral)</li>
+                <li>1 cdita de polvo de hornear</li>
+                <li>½ cdita de bicarbonato de sodio</li>
+                <li>1 cdita de canela en polvo (opcional)</li>
+                <li>1 pizca de sal</li>
+                <li>1 cdita de esencia de vainilla</li>
+                <li>Opcional: nueces, chips de chocolate o pasas</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Preparación</h3>
+              <ol>
+                <li>Precalienta el horno a 180 °C y engrasa un molde.</li>
+                <li>Haz puré los bananos con un tenedor.</li>
+                <li>En un bowl, bate huevos con azúcar y vainilla hasta espumoso.</li>
+                <li>Añade el aceite y luego el puré de banano. Mezcla.</li>
+                <li>Tamiza harina, polvo de hornear, bicarbonato, canela y sal.</li>
+                <li>Integra los secos poco a poco.</li>
+                <li>Agrega nueces, pasas o chocolate si quieres.</li>
+                <li>Vierte en el molde y hornea 40–45 min (palillo seco).</li>
+                <li>Deja enfriar, desmolda y sirve.</li>
+              </ol>
+              <p class="nota">💡 Tip: con bananos muy maduros puedes reducir el azúcar. Va genial con una cubierta ligera de miel o yogur griego.</p>
+            </div>
+          </div>
+
+          <h3>🍌 Torta de Banano (versión saludable) vs. 🎂 Torta Tradicional de Harina</h3>
+          <table>
+            <tr><th>Característica</th><th>Torta de Banano Saludable 🍌</th><th>Torta Tradicional de Harina 🎂</th></tr>
+            <tr><td>Base de sabor</td><td>Banano maduro (endulza y aporta humedad)</td><td>Azúcar refinada + mantequilla</td></tr>
+            <tr><td>Harina</td><td>Integral o avena</td><td>Trigo refinado</td></tr>
+            <tr><td>Endulzante</td><td>Banano, miel, panela o dátiles</td><td>Azúcar blanca en gran cantidad</td></tr>
+            <tr><td>Grasas</td><td>Aceite de coco/vegetal o poca grasa</td><td>Mantequilla o margarina</td></tr>
+            <tr><td>Textura</td><td>Esponjosa y húmeda</td><td>Suave/aireada, puede quedar más seca</td></tr>
+          </table>
+        </div>
+      </details>
+
+      <!-- TORTA DE ZANAHORIA -->
+      <details>
+        <summary>🥕 Torta de zanahoria</summary>
+        <div class="receta">
+          <img src="zanahoria.png" alt="Torta de zanahoria" />
+          <div class="cols">
+            <div>
+              <h3>Ingredientes</h3>
+              <ul>
+                <li>2 tazas de zanahoria rallada fina</li>
+                <li>3 huevos</li>
+                <li>½ taza de aceite vegetal (coco o girasol)</li>
+                <li>1 taza de azúcar morena o panela</li>
+                <li>1 ½ tazas de harina de trigo (puede ser mitad integral)</li>
+                <li>1 cdita de polvo de hornear</li>
+                <li>½ cdita de bicarbonato de sodio</li>
+                <li>1 cdita de canela en polvo</li>
+                <li>½ cdita de nuez moscada (opcional)</li>
+                <li>1 pizca de sal</li>
+                <li>Opcional: nueces picadas o pasas</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Preparación</h3>
+              <ol>
+                <li>Precalienta el horno a 180 °C y engrasa un molde.</li>
+                <li>Bate huevos con azúcar hasta esponjosos.</li>
+                <li>Agrega el aceite en forma de hilo y mezcla.</li>
+                <li>Incorpora la zanahoria rallada.</li>
+                <li>Tamiza y añade: harina, polvo de hornear, bicarbonato, canela, nuez moscada y sal.</li>
+                <li>Integra suavemente. Agrega nueces o pasas si deseas.</li>
+                <li>Vierte en el molde y hornea 40–45 min (palillo limpio).</li>
+                <li>Deja enfriar antes de desmoldar.</li>
+              </ol>
+              <p class="nota">Opcional: cúbrela con frosting de queso crema (queso crema + un poco de mantequilla + azúcar pulverizada).</p>
+            </div>
+          </div>
+
+          <h3>🎂 Torta Tradicional de Harina vs. 🥕 Torta de Zanahoria Saludable</h3>
+          <table>
+            <tr><th>Característica</th><th>Torta Tradicional 🎂</th><th>Torta de Zanahoria Saludable 🥕</th></tr>
+            <tr><td>Base de sabor</td><td>Azúcar refinada, mantequilla, vainilla</td><td>Zanahoria (dulzor natural y humedad)</td></tr>
+            <tr><td>Harina</td><td>Trigo refinado</td><td>Integral o avena</td></tr>
+            <tr><td>Endulzante</td><td>Azúcar blanca en gran cantidad</td><td>Miel, panela o dátiles (menos cantidad)</td></tr>
+            <tr><td>Grasas</td><td>Mantequilla/margarina</td><td>Aceite vegetal (más saludable)</td></tr>
+            <tr><td>Textura</td><td>Esponjosa, depende de azúcar y grasa</td><td>Más densa y húmeda, toque especiado</td></tr>
+            <tr><td>Fibra</td><td>Muy baja</td><td>Alta (zanahoria + integral)</td></tr>
+            <tr><td>Vitaminas</td><td>Casi solo calorías vacías</td><td>Rica en betacaroteno (Vit. A), Vit. C y antioxidantes</td></tr>
+            <tr><td>Calorías (70 g)</td><td>250–300 kcal</td><td>160–180 kcal</td></tr>
+            <tr><td>Índice glucémico</td><td>Alto</td><td>Medio-bajo</td></tr>
+            <tr><td>Beneficios</td><td>Sabor clásico</td><td>Nutritiva, saciante; buena para vista, piel e inmunidad</td></tr>
+          </table>
+
+          <p class="nota"><strong>Conclusión:</strong> La torta tradicional es más ligera al paladar pero más azucarada y grasa. La versión de zanahoria saludable es más densa, aporta fibra, vitaminas y estabilidad de glucosa.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>📧 Contáctanos: <a href="mailto:proy.cresalud@gmail.com">proy.cresalud@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/creciendo.con.salud" target="_blank" rel="noopener">creciendo.con.salud</a></p>
+  </footer>
+</body>
+</html>
